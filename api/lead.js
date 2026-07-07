@@ -36,7 +36,7 @@ export default async function handler(req, res) {
         .json({ ok: false, error: "Ошибка конфигурации сервера" });
     }
 
-    const message = `🟢 *Новая заявка!*\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n💬 Комментарий: ${comment || "нет"}\n🕐 Время: ${new Date().toLocaleString("ru-RU")}`;
+    const message = `🟢 *Новая заявка!*\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n`;
 
     const tgResponse = await fetch(
       `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
