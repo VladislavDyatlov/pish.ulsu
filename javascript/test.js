@@ -1,4 +1,7 @@
 (function () {
+  const BOT_TOKEN = "8818678558:AAFevqXfYE9tuA88EQRRW4yGjl5_HuIbbsg";
+  const CHAT_ID = "-1004415494329";
+
   const form = document.getElementById("applyForm");
   const submitBtn = document.getElementById("submitBtn");
   const btnText = submitBtn.querySelector(".btn-text");
@@ -38,8 +41,8 @@
     toastMessage.textContent = message;
     toast.classList.remove("translate-y-4", "opacity-0");
     toast.classList.add("translate-y-0", "opacity-100");
-    clearTimeout(window._toastTimer);
-    window._toastTimer = setTimeout(() => {
+    clearTimeout(window.toastTimer);
+    window.toastTimer = setTimeout(() => {
       toast.classList.add("translate-y-4", "opacity-0");
       toast.classList.remove("translate-y-0", "opacity-100");
     }, 4000);
@@ -51,7 +54,7 @@
     const name = form.querySelector('[name="name"]').value.trim();
     const phone = form.querySelector('[name="phone"]').value;
     if (!name || name.length < 2) {
-      showToast("error", "Введите корректное имя");
+      showToast("error", "Пожалуйста, введите корректное имя");
       return;
     }
     const phoneDigits = phone.replace(/\D/g, "");
@@ -65,23 +68,33 @@
     btnLoader.classList.remove("hidden");
     btnLoader.classList.add("inline-flex");
 
-    try {
-      const response = await fetch("/api/lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, phone, comment: "" }),
-      });
+    const message = `🟢 *Новая заявка!*\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n🕐 Время: ${new Date().toLocaleString("ru-RU")}`;
 
-      const result = await response.json();
-      if (result.ok) {
+    try {
+      const response = await fetch(
+        `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            chat_id: CHAT_ID,
+            text: message,
+            parse_mode: "Markdown",
+          }),
+        },
+      );
+
+      const data = await response.json();
+      if (data.ok) {
         showToast("success", "Заявка отправлена! Мы свяжемся с вами.");
         form.reset();
       } else {
-        showToast("error", result.error || "Ошибка отправки");
+        showToast("error", "Ошибка отправки. Попробуйте позже.");
+        console.error("Telegram API error:", data);
       }
     } catch (error) {
-      console.error("Ошибка:", error);
-      showToast("error", "Ошибка соединения. Попробуйте позже.");
+      console.error("Network error:", error);
+      showToast("error", "Ошибка соединения. Проверьте интернет.");
     } finally {
       submitBtn.disabled = false;
       btnText.classList.remove("hidden");
