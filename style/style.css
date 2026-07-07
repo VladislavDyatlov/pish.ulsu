@@ -1,0 +1,179 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", system-ui, sans-serif;
+}
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  margin: 0;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+.manrope {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --lime: #b1ff3a;
+  --blue: #1e2270;
+  --light-blue: #e8f0fe;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-800: #1f2937;
+  --radius-card: 32px;
+  --radius-btn: 14px;
+}
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s cubic-bezier(0.2, 0.9, 0.3, 1),
+    transform 0.7s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Модульная геометрия для Hero */
+.hero-module {
+  position: absolute;
+  background: #b1ff3a;
+  opacity: 0.8;
+  box-shadow: 0 20px 40px -12px rgba(177, 255, 58, 0.3);
+}
+
+.hero-module.small {
+  width: 80px;
+  height: 80px;
+}
+.hero-module.medium {
+  width: 120px;
+  height: 120px;
+}
+.hero-module.large {
+  width: 180px;
+  height: 180px;
+  border-radius: 42px;
+}
+.connector {
+  position: absolute;
+  background-color: #1e2270;
+  opacity: 0.25;
+  z-index: 0;
+  border-radius: 4px;
+}
+/* Линии-соединители между модулями */
+.connector.horizontal {
+  position: absolute;
+  height: 1.5px;
+  background: #1e2270;
+  opacity: 0.15;
+}
+.connector.vertical {
+  position: absolute;
+  width: 1.5px;
+  background: #1e2270;
+  opacity: 0.15;
+}
+
+.dot-pattern {
+  background-image: radial-gradient(circle, #1e2270 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+/* Карточки с мягкой тенью и эффектом при наведении */
+.card-hover {
+  transition: all 0.3s ease;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.02),
+    0 1px 2px rgba(0, 0, 0, 0.03);
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 12px 24px -8px rgba(0, 0, 0, 0.08),
+    0 4px 8px rgba(0, 0, 0, 0.02);
+  border-color: var(--lime);
+}
+/* Кнопки */
+.btn-primary {
+  background-color: var(--lime);
+  color: #0f0f1a;
+  font-weight: 600;
+  border-radius: var(--radius-btn);
+  transition:
+    background 0.2s,
+    transform 0.1s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background-color: #9de530;
+  transform: scale(1.02);
+}
+.btn-outline {
+  background: transparent;
+  border: 1.5px solid #d1d5db;
+  color: #1f2937;
+  font-weight: 600;
+  border-radius: var(--radius-btn);
+  transition: all 0.2s;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-outline:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+  background-color: rgba(30, 34, 112, 0.02);
+}
+/* Паттерн из точек для декора */
+.dot-pattern {
+  background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+/* Для секции направлений: акцентная левая полоса */
+.direction-card {
+  position: relative;
+  overflow: hidden;
+}
+.direction-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 6px;
+  background: var(--lime);
+  border-radius: 0 8px 8px 0;
+}
+/* Медиа-запросы для тонкой настройки */
+@media (max-width: 768px) {
+  .hero-module.large {
+    width: 120px;
+    height: 120px;
+  }
+  .hero-module.medium {
+    width: 80px;
+    height: 80px;
+  }
+  .hero-module.small {
+    width: 50px;
+    height: 50px;
+  }
+}

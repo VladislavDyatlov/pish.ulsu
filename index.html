@@ -1,0 +1,2182 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Передовая инженерная школа УлГУ | Приёмная комиссия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./assets/favicon.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="antialiased">
+    <!-- Навигация (Navbar) -->
+    <header
+      class="fixed top-0 left-0 w-full bg-white backdrop-blur-md z-50 border-b border-gray-100 transition-shadow duration-300"
+      id="navbar"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"
+      >
+        <a href="#" class="flex items-center gap-3 select-none shrink-0">
+          <img
+            src="./assets/logo.png"
+            alt="Передовая инженерная школа УлГУ"
+            class="h-8 md:h-10 w-auto object-contain"
+          />
+        </a>
+
+        <nav
+          class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-700"
+        >
+          <a href="#about" class="hover:text-[#1E2270] transition-colors"
+            >О школе</a
+          >
+          <a href="#advantages" class="hover:text-[#1E2270] transition-colors"
+            >Преимущества</a
+          >
+          <a href="#directions" class="hover:text-[#1E2270] transition-colors"
+            >Направления</a
+          >
+          <a href="#admission" class="hover:text-[#1E2270] transition-colors"
+            >Поступление</a
+          >
+          <a href="#contacts" class="hover:text-[#1E2270] transition-colors"
+            >Контакты</a
+          >
+        </nav>
+
+        <a
+          href="#apply"
+          class="btn-primary hidden lg:inline-flex text-sm md:text-base px-5 py-2.5 md:px-6 md:py-3"
+        >
+          Подать заявку
+        </a>
+
+        <button
+          id="menu-toggle"
+          class="lg:hidden text-gray-700 p-2 z-50 relative"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+        >
+          <svg
+            id="menu-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="lg:hidden fixed inset-0 top-[73px] !bg-white z-40 transform -translate-y-full opacity-0 pointer-events-none transition-all duration-300 ease-in-out shadow-xl border-t border-gray-100"
+      >
+        <nav
+          class="flex flex-col bg-white items-center justify-start pt-12 px-6 gap-2 text-lg font-medium text-gray-800"
+        >
+          <a
+            href="#about"
+            class="mobile-link w-full text-center py-3 rounded-xl hover:bg-gray-100 active:bg-gray-200 transition-colors"
+            >О школе</a
+          >
+          <a
+            href="#advantages"
+            class="mobile-link w-full text-center py-3 rounded-xl hover:bg-gray-100 active:bg-gray-200 transition-colors"
+            >Преимущества</a
+          >
+          <a
+            href="#directions"
+            class="mobile-link w-full text-center py-3 rounded-xl hover:bg-gray-100 active:bg-gray-200 transition-colors"
+            >Направления</a
+          >
+          <a
+            href="#admission"
+            class="mobile-link w-full text-center py-3 rounded-xl hover:bg-gray-100 active:bg-gray-200 transition-colors"
+            >Поступление</a
+          >
+          <a
+            href="#contacts"
+            class="mobile-link w-full text-center py-3 rounded-xl hover:bg-gray-100 active:bg-gray-200 transition-colors"
+            >Контакты</a
+          >
+          <a
+            href="#apply"
+            class="btn-primary mb-5 w-full text-center py-4 mt-4 mobile-link rounded-xl"
+            >Подать заявку</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="pt-20 md:pt-24">
+      <section
+        class="relative min-h-[90vh] flex items-center bg-white overflow-hidden"
+        id="hero"
+      >
+        <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+          <div class="md:hidden">
+            <div
+              style="
+                position: absolute;
+                top: 8%;
+                left: -20px;
+                width: 100px;
+                height: 100px;
+                border-radius: 28px;
+                background: #b1ff3a;
+                opacity: 0.7;
+              "
+            ></div>
+            <div
+              style="
+                position: absolute;
+                top: 30%;
+                left: 60px;
+                width: 80px;
+                height: 80px;
+                border-radius: 24px;
+                background: #1e2270;
+                opacity: 0.08;
+              "
+            ></div>
+            <div
+              style="
+                position: absolute;
+                top: 55%;
+                left: 10px;
+                width: 90px;
+                height: 90px;
+                border-radius: 24px;
+                background: #b1ff3a;
+                opacity: 0.6;
+              "
+            ></div>
+            <div
+              style="
+                position: absolute;
+                top: 75%;
+                left: 80px;
+                width: 60px;
+                height: 60px;
+                border-radius: 18px;
+                background: #9ca3af;
+                opacity: 0.25;
+              "
+            ></div>
+          </div>
+
+          <div class="hidden md:block">
+            <div
+              style="
+                position: absolute;
+                top: 5%;
+                left: -30px;
+                width: 150px;
+                height: 150px;
+                border-radius: 40px;
+                background: #b1ff3a;
+                opacity: 0.8;
+              "
+            ></div>
+            <div
+              style="
+                position: absolute;
+                top: 15%;
+                left: 90px;
+                width: 100px;
+                height: 100px;
+                border-radius: 28px;
+                background: #9ca3af;
+                opacity: 0.25;
+              "
+            ></div>
+            <div
+              style="
+                position: absolute;
+                top: 22%;
+                left: 20px;
+                width: 130px;
+                height: 110px;
+                border-radius: 32px;
+                background: #b1ff3a;
+                opacity: 0.8;
+              "
+            ></div>
+            <div
+              style="
+                position: absolute;
+                top: 30%;
+                left: 120px;
+                width: 110px;
+                height: 110px;
+                border-radius: 30px;
+                background: #b1ff3a;
+                opacity: 0.8;
+              "
+            ></div>
+            <div
+              style="
+                position: absolute;
+                top: 38%;
+                left: 40px;
+                width: 120px;
+                height: 120px;
+                border-radius: 34px;
+                background: #1e2270;
+                opacity: 0.08;
+              "
+            ></div>
+            <div
+              style="
+                position: absolute;
+                top: 46%;
+                left: 140px;
+                width: 90px;
+                height: 90px;
+                border-radius: 24px;
+                background: #e5e7eb;
+                opacity: 0.35;
+              "
+            ></div>
+            <div
+              style="
+                position: absolute;
+                right: -20px;
+                top: 15%;
+                width: 140px;
+                height: 140px;
+                border-radius: 36px;
+                background: #1e2270;
+                opacity: 0.07;
+                z-index: 0;
+              "
+            ></div>
+            <div
+              class="absolute top-0 right-0 w-64 h-64 dot-pattern opacity-30"
+            ></div>
+          </div>
+        </div>
+
+        <!-- Контент Hero -->
+        <div
+          class="relative z-10 max-w-7xl mx-auto px-6 md:px-8 w-full grid lg:grid-cols-2 gap-12 items-center py-16 md:py-24"
+        >
+          <div class="fade-in-up visible">
+            <h1
+              class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-[1.1] mb-6 tracking-tight manrope"
+            >
+              Передовая инженерная школа
+              <span class="text-[#1E2270]">УлГУ</span>
+            </h1>
+            <p
+              class="text-lg md:text-xl text-gray-600 max-w-xl mb-8 leading-relaxed inter"
+            >
+              Федеральный проект подготовки инженеров нового поколения для
+              биофармацевтики и медицинского приборостроения. Образование,
+              соединённое с реальной наукой и индустрией.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#directions"
+                class="btn-primary text-base md:text-lg px-8 py-4"
+                >Смотреть направления</a
+              >
+              <a
+                href="#about"
+                class="btn-outline text-base md:text-lg px-8 py-4"
+                >Узнать больше</a
+              >
+            </div>
+            <div class="mt-10 flex gap-8 text-sm text-gray-500">
+              <div>
+                <span class="font-bold text-gray-800 text-xl">50</span
+                ><br />передовых школ в РФ
+              </div>
+              <div>
+                <span class="font-bold text-gray-800 text-xl">2023</span
+                ><br />год открытия в УлГУ
+              </div>
+              <div>
+                <span class="font-bold text-gray-800 text-xl">2</span
+                ><br />магистерские программы
+              </div>
+            </div>
+          </div>
+          <div class="relative fade-in-up visible">
+            <div
+              class="relative w-full aspect-[4/3] rounded-[40px] overflow-hidden shadow-2xl border border-white/40"
+            >
+              <img
+                src="./assets/hero_avatar.png"
+                alt="Современная лаборатория ПИШ УлГУ"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-tr from-[#1E2270]/10 to-transparent"
+              ></div>
+            </div>
+            <div
+              class="absolute -bottom-6 -left-6 w-24 h-24 bg-[#B1FF3A] rounded-3xl shadow-lg flex items-center justify-center z-20"
+            >
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1E2270"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Преимущества (Плюсы) -->
+      <section id="advantages" class="py-20 md:py-28 bg-[#F9FAFB] relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+          <div class="text-center mb-16 fade-in-up">
+            <h2
+              class="text-3xl md:text-5xl font-bold text-gray-900 manrope mb-4"
+            >
+              Почему стоит выбирать ПИШ ФармИнжиниринг
+            </h2>
+            <p class="text-gray-500 max-w-2xl mx-auto text-lg">
+              Девять причин, которые выделяют нас среди классического
+              образования
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+          >
+            <div
+              class="bg-white rounded-[32px] p-7 card-hover border border-gray-100 fade-in-up"
+            >
+              <div
+                class="w-12 h-12 bg-[#E8F0FE] rounded-2xl flex items-center justify-center mb-5"
+              >
+                <svg
+                  class="w-6 h-6 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg text-gray-900 mb-2">
+                Полный цикл создания продуктов
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Обучение от исследования до внедрения новых биомедицинских
+                разработок.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-[32px] p-7 card-hover border border-gray-100 fade-in-up"
+            >
+              <div
+                class="w-12 h-12 bg-[#E8F0FE] rounded-2xl flex items-center justify-center mb-5"
+              >
+                <svg
+                  class="w-6 h-6 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg text-gray-900 mb-2">
+                ВКР — реальные R&D проекты
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Выпускная работа выполняется по заказу индустриальных партнёров.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-[32px] p-7 card-hover border border-gray-100 fade-in-up"
+            >
+              <div
+                class="w-12 h-12 bg-[#E8F0FE] rounded-2xl flex items-center justify-center mb-5"
+              >
+                <svg
+                  class="w-6 h-6 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg text-gray-900 mb-2">
+                80% программы — практика
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Работа в лабораториях и на реальном оборудовании с первого
+                семестра.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-[32px] p-7 card-hover border border-gray-100 fade-in-up"
+            >
+              <div
+                class="w-12 h-12 bg-[#E8F0FE] rounded-2xl flex items-center justify-center mb-5"
+              >
+                <svg
+                  class="w-6 h-6 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg text-gray-900 mb-2">
+                Только профильные дисциплины
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Никаких лишних предметов — только инженерные и биомедицинские
+                курсы.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-[32px] p-7 card-hover border border-gray-100 fade-in-up"
+            >
+              <div
+                class="w-12 h-12 bg-[#E8F0FE] rounded-2xl flex items-center justify-center mb-5"
+              >
+                <svg
+                  class="w-6 h-6 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg text-gray-900 mb-2">
+                Преподаватели из индустрии
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Ведущие специалисты фармкомпаний и исследовательских центров.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-[32px] p-7 card-hover border border-gray-100 fade-in-up"
+            >
+              <div
+                class="w-12 h-12 bg-[#E8F0FE] rounded-2xl flex items-center justify-center mb-5"
+              >
+                <svg
+                  class="w-6 h-6 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg text-gray-900 mb-2">
+                Стажировки с 1-го семестра
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Практика у индустриальных партнёров сразу после начала обучения.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-[32px] p-7 card-hover border border-gray-100 fade-in-up"
+            >
+              <div
+                class="w-12 h-12 bg-[#E8F0FE] rounded-2xl flex items-center justify-center mb-5"
+              >
+                <svg
+                  class="w-6 h-6 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg text-gray-900 mb-2">
+                Трудоустройство со 2-го семестра
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Работа в научных коллективах ПИШ параллельно с учёбой.
+              </p>
+            </div>
+            <div
+              class="bg-[#B1FF3A] rounded-[32px] p-7 card-hover border border-transparent fade-in-up relative overflow-hidden"
+            >
+              <div
+                class="absolute -top-4 -right-4 w-24 h-24 bg-white/20 rounded-full"
+              ></div>
+              <div
+                class="w-12 h-12 bg-white/40 rounded-2xl flex items-center justify-center mb-5"
+              >
+                <svg
+                  class="w-6 h-6 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg text-gray-900 mb-2">
+                Гранты 60 000 ₽ на стажировки
+              </h3>
+              <p class="text-gray-800 text-sm leading-relaxed">
+                Финансовая поддержка для прохождения практик в ведущих центрах.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-[32px] p-7 card-hover border border-gray-100 fade-in-up"
+            >
+              <div
+                class="w-12 h-12 bg-[#E8F0FE] rounded-2xl flex items-center justify-center mb-5"
+              >
+                <svg
+                  class="w-6 h-6 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg text-gray-900 mb-2">
+                Гарантия трудоустройства
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Выпускники востребованы партнёрами — работа сразу после защиты.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute top-20 right-0 w-40 h-40 dot-pattern opacity-20 pointer-events-none"
+        ></div>
+      </section>
+
+      <!-- Направления магистратуры -->
+      <section id="directions" class="py-20 md:py-28 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+          <div class="text-center mb-16 fade-in-up">
+            <h2
+              class="text-3xl md:text-5xl font-bold text-gray-900 manrope mb-4"
+            >
+              Направления магистратуры
+            </h2>
+            <p class="text-gray-500 max-w-xl mx-auto text-lg">
+              Две уникальные программы, созданные под запросы
+              высокотехнологичной индустрии
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+            <div
+              class="direction-card bg-white rounded-[40px] p-8 md:p-10 border border-gray-100 shadow-sm card-hover fade-in-up flex flex-col h-full"
+            >
+              <div class="flex items-start justify-between mb-6">
+                <div
+                  class="w-16 h-16 bg-[#1E2270] rounded-2xl flex items-center justify-center"
+                >
+                  <svg
+                    class="w-8 h-8 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="text-sm font-semibold text-[#1E2270] bg-[#E8F0FE] px-4 py-1.5 rounded-full"
+                  >06.04.01 Биология</span
+                >
+              </div>
+              <h3
+                class="text-2xl md:text-3xl font-bold text-gray-900 manrope mb-3"
+              >
+                Биофарминжиниринг
+              </h3>
+              <p class="text-gray-600 mb-6 flex-grow">
+                Проектирование и разработка биофармацевтических препаратов,
+                работа с клеточными технологиями и биореакторами.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-8 text-sm">
+                <div class="bg-gray-50 rounded-2xl p-4">
+                  <span class="text-gray-500">Мест</span>
+                  <p class="font-bold text-xl text-gray-900">15</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-4">
+                  <span class="text-gray-500">Форма</span>
+                  <p class="font-bold text-gray-900">Очная</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-4">
+                  <span class="text-gray-500">Срок</span>
+                  <p class="font-bold text-gray-900">2 года</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-4">
+                  <span class="text-gray-500">Грант</span>
+                  <p class="font-bold text-[#1E2270]">до 100%</p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="btn-outline w-full text-center justify-center py-3.5"
+                >Подробнее о программе</a
+              >
+            </div>
+
+            <div
+              class="direction-card bg-white rounded-[40px] p-8 md:p-10 border border-gray-100 shadow-sm card-hover fade-in-up flex flex-col h-full"
+            >
+              <div class="flex items-start justify-between mb-6">
+                <div
+                  class="w-16 h-16 bg-[#B1FF3A] rounded-2xl flex items-center justify-center"
+                >
+                  <svg
+                    class="w-8 h-8 text-[#1E2270]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="text-sm font-semibold text-[#1E2270] bg-[#E8F0FE] px-4 py-1.5 rounded-full"
+                  >27.04.03 Системный анализ</span
+                >
+              </div>
+              <h3
+                class="text-2xl md:text-3xl font-bold text-gray-900 manrope mb-3"
+              >
+                Медицинское приборостроение
+              </h3>
+              <p class="text-gray-600 mb-6 flex-grow">
+                Разработка приборов для диагностики и терапии заболеваний,
+                интеллектуальные системы анализа медицинских данных.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-8 text-sm">
+                <div class="bg-gray-50 rounded-2xl p-4">
+                  <span class="text-gray-500">Мест</span>
+                  <p class="font-bold text-xl text-gray-900">9</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-4">
+                  <span class="text-gray-500">Форма</span>
+                  <p class="font-bold text-gray-900">Очная</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-4">
+                  <span class="text-gray-500">Срок</span>
+                  <p class="font-bold text-gray-900">2 года</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-4">
+                  <span class="text-gray-500">Грант</span>
+                  <p class="font-bold text-[#1E2270]">до 100%</p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="btn-outline w-full text-center justify-center py-3.5"
+                >Подробнее о программе</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="mt-10 text-center text-gray-500 text-sm flex flex-wrap justify-center gap-6 fade-in-up"
+          >
+            <span class="inline-flex items-center gap-2">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="shrink-0"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+                <rect x="7" y="14" width="3" height="3" rx="0.5" />
+                <rect x="14" y="14" width="3" height="3" rx="0.5" />
+              </svg>
+              <span>Начало приёма документов: 20 июня 2026</span>
+            </span>
+
+            <span class="inline-flex items-center gap-2">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="shrink-0"
+              >
+                <path d="M2 9L12 3l10 6-10 6L2 9z" />
+                <path d="M5 11v5a7 7 0 0 0 7 4 7 7 0 0 0 7-4v-5" />
+              </svg>
+              <span>Диплом государственного образца</span>
+            </span>
+
+            <span class="inline-flex items-center gap-2">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="shrink-0"
+              >
+                <circle cx="12" cy="8" r="4" />
+                <path d="M12 12v7" />
+                <line x1="9" y1="3" x2="9" y2="5" />
+                <line x1="15" y1="3" x2="15" y2="5" />
+                <path d="M7 22h10" />
+                <line x1="10" y1="19" x2="14" y2="19" />
+              </svg>
+              <span>Доступ к лабораториям мирового уровня</span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="absolute bottom-10 left-10 flex gap-3 opacity-20 pointer-events-none"
+        >
+          <div class="w-8 h-8 bg-[#1E2270] rounded-xl"></div>
+          <div class="w-8 h-8 bg-[#B1FF3A] rounded-xl"></div>
+          <div class="w-8 h-8 bg-[#1E2270] rounded-xl"></div>
+        </div>
+      </section>
+      <div class="h-8"></div>
+
+      <!-- Блок заявки: растянут на всю ширину с собственным фоном -->
+      <section
+        id="apply"
+        class="relative w-full py-24 md:py-32 overflow-hidden"
+        style="background-color: #0b0e2f"
+      >
+        <div class="absolute inset-0 pointer-events-none">
+          <div
+            class="absolute top-10 left-10 w-40 h-40 rounded-[40px] bg-[#B1FF3A] opacity-10"
+          ></div>
+          <div
+            class="absolute bottom-10 right-20 w-28 h-28 rounded-[32px] bg-[#B1FF3A] opacity-5"
+          ></div>
+          <div
+            class="absolute top-1/3 right-10 w-20 h-20 rounded-[24px] bg-[#1E2270] opacity-30"
+          ></div>
+          <div
+            class="absolute bottom-1/4 left-1/4 w-16 h-16 rounded-[20px] bg-white opacity-5"
+          ></div>
+          <svg
+            class="absolute inset-0 w-full h-full opacity-10"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="15%"
+              y1="30%"
+              x2="35%"
+              y2="45%"
+              stroke="#B1FF3A"
+              stroke-width="1.5"
+            />
+            <line
+              x1="70%"
+              y1="20%"
+              x2="85%"
+              y2="40%"
+              stroke="#B1FF3A"
+              stroke-width="1.5"
+            />
+            <circle cx="15%" cy="30%" r="3" fill="#B1FF3A" />
+            <circle cx="35%" cy="45%" r="3" fill="#B1FF3A" />
+            <circle cx="70%" cy="20%" r="3" fill="#B1FF3A" />
+            <circle cx="85%" cy="40%" r="3" fill="#B1FF3A" />
+          </svg>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
+          <div class="max-w-2xl mx-auto text-center">
+            <h2
+              class="text-3xl md:text-5xl font-bold text-white manrope mb-4 tracking-tight"
+            >
+              Готовы стать частью<br />инженерной элиты?
+            </h2>
+            <p class="text-gray-300 text-lg mb-10 max-w-xl mx-auto">
+              Оставьте заявку, и мы свяжемся с вами для консультации по
+              поступлению в ПИШ УлГУ
+            </p>
+
+            <form
+              id="applyForm"
+              class="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center w-full"
+            >
+              <input
+                type="text"
+                placeholder="Ваше имя"
+                name="name"
+                required
+                class="w-full sm:flex-1 sm:min-w-0 px-6 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-gray-400 backdrop-blur-sm focus:outline-none focus:border-[#B1FF3A] focus:bg-white/15 transition-all text-base"
+              />
+              <input
+                type="tel"
+                placeholder="+7 (___) ___-__-__"
+                name="phone"
+                required
+                class="w-full sm:flex-1 sm:min-w-0 px-6 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-gray-400 backdrop-blur-sm focus:outline-none focus:border-[#B1FF3A] focus:bg-white/15 transition-all text-base"
+              />
+              <button
+                type="submit"
+                id="submitBtn"
+                class="w-full sm:w-auto min-w-[170px] px-8 py-4 rounded-2xl bg-[#B1FF3A] text-gray-900 font-bold text-base hover:bg-[#9DE530] transition-all transform hover:scale-[1.02] active:scale-95 whitespace-nowrap shrink-0"
+              >
+                <span class="btn-text">Отправить заявку</span>
+                <span class="btn-loader hidden items-center gap-2">
+                  <svg
+                    class="animate-spin h-4 w-4 text-gray-900"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      class="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      fill="none"
+                    />
+                    <path
+                      class="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    />
+                  </svg>
+                  Отправка...
+                </span>
+              </button>
+            </form>
+
+            <p class="text-gray-400 text-xs mt-6">
+              Нажимая «Отправить», вы соглашаетесь с обработкой персональных
+              данных
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Как поступить -->
+      <section id="admission" class="py-20 md:py-28 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+          <div class="text-center mb-16 fade-in-up">
+            <h2
+              class="text-3xl md:text-5xl font-bold text-gray-900 manrope mb-4"
+            >
+              Как поступить
+            </h2>
+            <p class="text-gray-500 max-w-2xl mx-auto text-lg">
+              Помимо подачи документов, необходимо успешно пройти вступительные
+              испытания
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div
+              class="bg-[#F9FAFB] rounded-[36px] p-8 md:p-10 border border-gray-100 card-hover fade-in-up flex flex-col items-center text-center"
+            >
+              <div
+                class="w-16 h-16 bg-[#1E2270] rounded-2xl flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-xl text-gray-900 mb-3">
+                Экзамен по профилю
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Комплексный тест по профильным дисциплинам выбранной
+                магистерской программы
+              </p>
+            </div>
+
+            <div
+              class="bg-[#B1FF3A] rounded-[36px] p-8 md:p-10 border border-transparent card-hover fade-in-up flex flex-col items-center text-center relative overflow-hidden"
+            >
+              <div
+                class="absolute -top-6 -right-6 w-20 h-20 bg-white/20 rounded-full"
+              ></div>
+              <div
+                class="w-16 h-16 bg-white/40 rounded-2xl flex items-center justify-center mb-6 relative z-10"
+              >
+                <svg
+                  class="w-8 h-8 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-xl text-gray-900 mb-3 relative z-10">
+                Собеседование
+              </h3>
+              <p class="text-gray-800 text-sm leading-relaxed relative z-10">
+                На основе написанного мотивационного эссе. Оценивается потенциал
+                и интерес к исследованиям
+              </p>
+            </div>
+
+            <div
+              class="bg-[#F9FAFB] rounded-[36px] p-8 md:p-10 border border-gray-100 card-hover fade-in-up flex flex-col items-center text-center"
+            >
+              <div
+                class="w-16 h-16 bg-[#1E2270] rounded-2xl flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-xl text-gray-900 mb-3">
+                Дополнительные баллы
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                За индивидуальные достижения: публикации, патенты, победы в
+                олимпиадах и конференциях
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-12 text-center fade-in-up">
+            <p class="text-gray-500 text-sm max-w-lg mx-auto leading-relaxed">
+              Вступительные испытания проводятся очно или в дистанционном
+              формате. Расписание экзаменов публикуется на официальном сайте
+              УлГУ за 2 недели до начала.
+            </p>
+          </div>
+        </div>
+
+        <!-- Декоративные модули -->
+        <div
+          class="absolute bottom-16 right-8 flex gap-2 opacity-10 pointer-events-none"
+        >
+          <div class="w-6 h-6 bg-[#1E2270] rounded-lg"></div>
+          <div class="w-6 h-6 bg-[#B1FF3A] rounded-lg"></div>
+          <div class="w-6 h-6 bg-[#1E2270] rounded-lg"></div>
+        </div>
+      </section>
+
+      <!-- Документы для поступления -->
+      <section id="documents" class="py-20 md:py-28 bg-[#F9FAFB] relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+          <div class="text-center mb-16 fade-in-up">
+            <h2
+              class="text-3xl md:text-5xl font-bold text-gray-900 manrope mb-4"
+            >
+              Документы для поступления
+            </h2>
+            <p class="text-gray-500 max-w-2xl mx-auto text-lg">
+              Подготовьте пакет документов заранее — это ускорит процесс
+              зачисления
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 max-w-4xl mx-auto"
+          >
+            <div
+              class="flex items-start gap-5 bg-white p-6 rounded-2xl border border-gray-100 card-hover fade-in-up"
+            >
+              <div
+                class="w-10 h-10 bg-[#E8F0FE] rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5"
+              >
+                <svg
+                  class="w-5 h-5 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 text-base mb-1">
+                  Паспорт
+                </h4>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                  Копия всех заполненных страниц (развороты с фото и
+                  регистрацией)
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-start gap-5 bg-white p-6 rounded-2xl border border-gray-100 card-hover fade-in-up"
+            >
+              <div
+                class="w-10 h-10 bg-[#E8F0FE] rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5"
+              >
+                <svg
+                  class="w-5 h-5 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 7l-9-5 9-5 9 5-9 5z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 text-base mb-1">
+                  Диплом об образовании
+                </h4>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                  Оригинал или заверенная копия документа о высшем образовании
+                  (бакалавриат/специалитет)
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-start gap-5 bg-white p-6 rounded-2xl border border-gray-100 card-hover fade-in-up"
+            >
+              <div
+                class="w-10 h-10 bg-[#E8F0FE] rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5"
+              >
+                <svg
+                  class="w-5 h-5 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 text-base mb-1">
+                  СНИЛС
+                </h4>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                  Копия страхового свидетельства (при наличии)
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-start gap-5 bg-white p-6 rounded-2xl border border-gray-100 card-hover fade-in-up"
+            >
+              <div
+                class="w-10 h-10 bg-[#E8F0FE] rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5"
+              >
+                <svg
+                  class="w-5 h-5 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 text-base mb-1">
+                  Фотографии
+                </h4>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                  2 шт., цветные, 3×4 см, на белом фоне, без уголка
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-start gap-5 bg-white p-6 rounded-2xl border border-gray-100 card-hover fade-in-up"
+            >
+              <div
+                class="w-10 h-10 bg-[#E8F0FE] rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5"
+              >
+                <svg
+                  class="w-5 h-5 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 text-base mb-1">
+                  Портфолио
+                </h4>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                  Индивидуальные достижения: публикации, патенты, сертификаты,
+                  дипломы победителей
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-start gap-5 bg-[#B1FF3A] p-6 rounded-2xl border border-transparent card-hover fade-in-up relative overflow-hidden"
+            >
+              <div
+                class="absolute -bottom-3 -right-3 w-16 h-16 bg-white/20 rounded-full"
+              ></div>
+              <div
+                class="w-10 h-10 bg-white/40 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5 relative z-10"
+              >
+                <svg
+                  class="w-5 h-5 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                  />
+                </svg>
+              </div>
+              <div class="relative z-10">
+                <h4 class="font-semibold text-gray-900 text-base mb-1">
+                  Мотивационное эссе
+                </h4>
+                <p class="text-gray-800 text-sm leading-relaxed">
+                  На основе эссе проводится собеседование. Опишите ваш интерес к
+                  инженерной сфере
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p
+            class="text-center text-gray-400 text-xs mt-10 fade-in-up max-w-lg mx-auto"
+          >
+            Полный перечень документов и сроки подачи уточняйте в приёмной
+            комиссии. Документы можно подать лично, по почте или через личный
+            кабинет абитуриента.
+          </p>
+        </div>
+
+        <div
+          class="absolute top-10 left-10 w-32 h-32 dot-pattern opacity-10 pointer-events-none"
+        ></div>
+      </section>
+
+      <!-- Вступительные экзамены -->
+      <section
+        id="exams"
+        class="py-20 md:py-28 bg-white relative overflow-hidden"
+      >
+        <div
+          class="absolute top-10 right-0 w-72 h-72 opacity-5 pointer-events-none"
+        >
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="70" height="70" rx="20" fill="#1E2270" />
+            <rect
+              x="100"
+              y="100"
+              width="70"
+              height="70"
+              rx="20"
+              fill="#B1FF3A"
+            />
+            <line
+              x1="45"
+              y1="45"
+              x2="135"
+              y2="135"
+              stroke="#1E2270"
+              stroke-width="4"
+            />
+          </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
+          <div class="text-center mb-16 fade-in-up">
+            <h2
+              class="text-3xl md:text-5xl font-bold text-gray-900 manrope mb-4"
+            >
+              Вступительные экзамены
+            </h2>
+            <p class="text-gray-500 max-w-2xl mx-auto text-lg">
+              10 июля и 19 августа — важные даты для абитуриентов Передовой
+              инженерной школы УлГУ «ФармИнжиниринг»
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+            <div
+              class="bg-[#F9FAFB] rounded-[36px] p-8 md:p-10 border border-gray-100 card-hover fade-in-up"
+            >
+              <div
+                class="w-12 h-12 bg-[#1E2270] rounded-2xl flex items-center justify-center mb-6"
+              >
+                <span class="text-white font-bold text-lg">1</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 manrope mb-2">
+                Первая волна
+              </h3>
+              <p class="text-4xl font-extrabold text-[#1E2270] manrope mb-4">
+                10 июля
+              </p>
+              <p class="text-gray-600 text-sm mb-4">Экзамены по профилям:</p>
+              <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-[#B1FF3A] rounded-full"></span>
+                  Системный анализ и управление
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-[#B1FF3A] rounded-full"></span>
+                  Биология
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="bg-[#F9FAFB] rounded-[36px] p-8 md:p-10 border border-gray-100 card-hover fade-in-up"
+            >
+              <div
+                class="w-12 h-12 bg-[#1E2270] rounded-2xl flex items-center justify-center mb-6"
+              >
+                <span class="text-white font-bold text-lg">2</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 manrope mb-2">
+                Вторая волна
+              </h3>
+              <p class="text-4xl font-extrabold text-[#1E2270] manrope mb-4">
+                19 августа
+              </p>
+              <p class="text-gray-600 text-sm mb-4">Экзамены по профилям:</p>
+              <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-[#B1FF3A] rounded-full"></span>
+                  Системный анализ и управление
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-[#B1FF3A] rounded-full"></span>
+                  Биология
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Программы вступительных испытаний (PDF) -->
+          <div class="text-center fade-in-up">
+            <p class="text-gray-600 mb-6 text-lg">
+              Чтобы хорошо подготовиться, скачайте программы вступительных
+              испытаний:
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+              <a
+                href="./assets/document/V_2026_Программа_ВИ_маг_06_04_01.pdf"
+                download
+                class="flex items-center gap-3 bg-white border border-gray-200 rounded-2xl px-6 py-4 hover:border-[#B1FF3A] hover:bg-[#F9FFF0] transition-all group"
+              >
+                <svg
+                  class="w-6 h-6 text-[#1E2270] group-hover:text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 11v6m-3-3l3 3 3-3"
+                  />
+                </svg>
+                <span class="font-medium text-gray-800"
+                  >Программа «Биология» (PDF)</span
+                >
+              </a>
+              <a
+                href="./assets/document/V_2026_Программа_ВИ_маг_27_04_03.pdf"
+                download
+                class="flex items-center gap-3 bg-white border border-gray-200 rounded-2xl px-6 py-4 hover:border-[#B1FF3A] hover:bg-[#F9FFF0] transition-all group"
+              >
+                <svg
+                  class="w-6 h-6 text-[#1E2270]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 11v6m-3-3l3 3 3-3"
+                  />
+                </svg>
+                <span class="font-medium text-gray-800"
+                  >Программа «Системный анализ» (PDF)</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Галерея ПИШ -->
+      <section id="gallery" class="py-20 md:py-28 bg-[#F9FAFB] relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+          <div class="text-center mb-16 fade-in-up">
+            <h2
+              class="text-3xl md:text-5xl font-bold text-gray-900 manrope mb-4"
+            >
+              ПИШ в лицах и технологиях
+            </h2>
+            <p class="text-gray-500 max-w-2xl mx-auto text-lg">
+              Лаборатории, оборудование, студенческие проекты и индустриальные
+              партнёрства
+            </p>
+          </div>
+
+          <!-- Сетка галереи (6 мест для фото) -->
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+            <div
+              class="relative group overflow-hidden rounded-[28px] aspect-[4/3] bg-gray-200 fade-in-up"
+            >
+              <img
+                src="./assets/gallary/IMG_0836_resized.jpg"
+                alt="Лаборатория ПИШ"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div
+                class="absolute inset-0 bg-gray-200 flex items-center justify-center"
+                style="display: none"
+              >
+                <svg
+                  class="w-10 h-10 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden rounded-[28px] aspect-[4/3] bg-gray-200 fade-in-up"
+            >
+              <img
+                src="./assets/gallary/P1013098.jpg"
+                alt="Студенты в лаборатории"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div
+                class="absolute inset-0 bg-gray-200 flex items-center justify-center"
+                style="display: none"
+              >
+                <svg
+                  class="w-10 h-10 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden rounded-[28px] aspect-[4/3] bg-gray-200 fade-in-up"
+            >
+              <img
+                src="./assets/gallary/P1013119.jpg"
+                alt="Научное оборудование"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div
+                class="absolute inset-0 bg-gray-200 flex items-center justify-center"
+                style="display: none"
+              >
+                <svg
+                  class="w-10 h-10 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden rounded-[28px] aspect-[4/3] bg-gray-200 fade-in-up"
+            >
+              <img
+                src="./assets/gallary/P1013159.jpg"
+                alt="Инженерные разработки"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div
+                class="absolute inset-0 bg-gray-200 flex items-center justify-center"
+                style="display: none"
+              >
+                <svg
+                  class="w-10 h-10 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden rounded-[28px] aspect-[4/3] bg-gray-200 fade-in-up"
+            >
+              <img
+                src="./assets/gallary/P1013399.jpg"
+                alt="Робототехника"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div
+                class="absolute inset-0 bg-gray-200 flex items-center justify-center"
+                style="display: none"
+              >
+                <svg
+                  class="w-10 h-10 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden rounded-[28px] aspect-[4/3] bg-gray-200 fade-in-up"
+            >
+              <img
+                src="./assets/gallary/P1013449.jpg"
+                alt="Команда ПИШ"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div
+                class="absolute inset-0 bg-gray-200 flex items-center justify-center"
+                style="display: none"
+              >
+                <svg
+                  class="w-10 h-10 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden rounded-[28px] aspect-[4/3] bg-gray-200 fade-in-up"
+            >
+              <img
+                src="./assets/gallary/P1014950.jpg"
+                alt="Команда ПИШ"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div
+                class="absolute inset-0 bg-gray-200 flex items-center justify-center"
+                style="display: none"
+              >
+                <svg
+                  class="w-10 h-10 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden rounded-[28px] aspect-[4/3] bg-gray-200 fade-in-up"
+            >
+              <img
+                src="./assets/gallary/IMG_0851_resized.jpg"
+                alt="Команда ПИШ"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div
+                class="absolute inset-0 bg-gray-200 flex items-center justify-center"
+                style="display: none"
+              >
+                <svg
+                  class="w-10 h-10 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden rounded-[28px] aspect-[4/3] bg-gray-200 fade-in-up"
+            >
+              <img
+                src="./assets/gallary/IMG_0946_resized.jpg"
+                alt="Команда ПИШ"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div
+                class="absolute inset-0 bg-gray-200 flex items-center justify-center"
+                style="display: none"
+              >
+                <svg
+                  class="w-10 h-10 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        #gallery .group:hover img {
+          transform: scale(1.05);
+        }
+      </style>
+
+      <section
+        id="apply"
+        class="relative w-full py-24 md:py-32 overflow-hidden"
+        style="background-color: #0b0e2f"
+      >
+        <div class="absolute inset-0 pointer-events-none">
+          <div
+            class="absolute top-10 left-10 w-40 h-40 rounded-[40px] bg-[#B1FF3A] opacity-10"
+          ></div>
+          <div
+            class="absolute bottom-10 right-20 w-28 h-28 rounded-[32px] bg-[#B1FF3A] opacity-5"
+          ></div>
+          <div
+            class="absolute top-1/3 right-10 w-20 h-20 rounded-[24px] bg-[#1E2270] opacity-30"
+          ></div>
+          <div
+            class="absolute bottom-1/4 left-1/4 w-16 h-16 rounded-[20px] bg-white opacity-5"
+          ></div>
+          <svg
+            class="absolute inset-0 w-full h-full opacity-10"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="15%"
+              y1="30%"
+              x2="35%"
+              y2="45%"
+              stroke="#B1FF3A"
+              stroke-width="1.5"
+            />
+            <line
+              x1="70%"
+              y1="20%"
+              x2="85%"
+              y2="40%"
+              stroke="#B1FF3A"
+              stroke-width="1.5"
+            />
+            <circle cx="15%" cy="30%" r="3" fill="#B1FF3A" />
+            <circle cx="35%" cy="45%" r="3" fill="#B1FF3A" />
+            <circle cx="70%" cy="20%" r="3" fill="#B1FF3A" />
+            <circle cx="85%" cy="40%" r="3" fill="#B1FF3A" />
+          </svg>
+        </div>
+
+        <!-- Контент: выровнен по общей сетке max-w-7xl -->
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
+          <div class="max-w-2xl mx-auto text-center">
+            <h2
+              class="text-3xl md:text-5xl font-bold text-white manrope mb-4 tracking-tight"
+            >
+              Готовы стать частью<br />инженерной элиты?
+            </h2>
+            <p class="text-gray-300 text-lg mb-10 max-w-xl mx-auto">
+              Оставьте заявку, и мы свяжемся с вами для консультации по
+              поступлению в ПИШ УлГУ
+            </p>
+
+            <!-- Форма заявки -->
+            <form
+              id="applyForm"
+              class="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center w-full"
+            >
+              <input
+                type="text"
+                placeholder="Ваше имя"
+                name="name"
+                required
+                class="w-full sm:flex-1 sm:min-w-0 px-6 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-gray-400 backdrop-blur-sm focus:outline-none focus:border-[#B1FF3A] focus:bg-white/15 transition-all text-base"
+              />
+              <input
+                type="tel"
+                placeholder="+7 (___) ___-__-__"
+                name="phone"
+                required
+                class="w-full sm:flex-1 sm:min-w-0 px-6 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-gray-400 backdrop-blur-sm focus:outline-none focus:border-[#B1FF3A] focus:bg-white/15 transition-all text-base"
+              />
+              <button
+                type="submit"
+                id="submitBtn"
+                class="w-full sm:w-auto min-w-[170px] px-8 py-4 rounded-2xl bg-[#B1FF3A] text-gray-900 font-bold text-base hover:bg-[#9DE530] transition-all transform hover:scale-[1.02] active:scale-95 whitespace-nowrap shrink-0"
+              >
+                <span class="btn-text">Отправить заявку</span>
+                <span class="btn-loader hidden items-center gap-2">
+                  <svg
+                    class="animate-spin h-4 w-4 text-gray-900"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      class="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      fill="none"
+                    />
+                    <path
+                      class="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    />
+                  </svg>
+                  Отправка...
+                </span>
+              </button>
+            </form>
+
+            <p class="text-gray-400 text-xs mt-6">
+              Нажимая «Отправить», вы соглашаетесь с обработкой персональных
+              данных
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div
+        id="toast"
+        class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 pointer-events-none"
+      >
+        <div
+          id="toastContent"
+          class="flex items-center gap-3 px-6 py-4 rounded-2xl shadow-2xl backdrop-blur-md transition-all duration-300 translate-y-4 opacity-0"
+          style="
+            background-color: #1e2270;
+            color: white;
+            border: 1px solid #b1ff3a;
+          "
+        >
+          <svg
+            id="toastIcon"
+            class="w-6 h-6 shrink-0"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          ></svg>
+          <span id="toastMessage" class="text-sm font-medium"></span>
+        </div>
+      </div>
+
+      <!-- Адрес и карта -->
+      <section id="contacts" class="py-20 md:py-28 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="fade-in-up">
+              <h2
+                class="text-3xl md:text-5xl font-bold text-gray-900 manrope mb-6"
+              >
+                Где мы находимся
+              </h2>
+              <p class="text-gray-600 text-lg mb-8">
+                Подача документов для поступления осуществляется через портал
+                Госуслуг, суперсервис «Поступление в вуз онлайн» или очно по
+                адресу:
+              </p>
+              <div
+                class="bg-[#F9FAFB] rounded-[32px] p-6 md:p-8 border border-gray-100 mb-6"
+              >
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 bg-[#B1FF3A] rounded-xl flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <svg
+                      class="w-5 h-5 text-[#1E2270]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-xl text-gray-900 mb-1">
+                      Приёмная комиссия ПИШ УлГУ
+                    </h3>
+                    <p class="text-gray-700">
+                      г. Ульяновск, ул. Льва Толстого, д. 42, аудитория 40
+                    </p>
+                    <p class="text-gray-500 text-sm mt-2">
+                      Пн–Пт: 9:00–17:00, Сб: 10:00–14:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-4">
+                <a
+                  href="https://www.gosuslugi.ru/vuzonline"
+                  target="_blank"
+                  class="btn-outline px-6 py-3 text-sm"
+                  >Подать через Госуслуги</a
+                >
+                <a
+                  href="https://www.ulsu.ru/abitur/"
+                  target="_blank"
+                  class="btn-outline px-6 py-3 text-sm"
+                  >Сайт для абитуриентов УлГУ</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="fade-in-up rounded-[36px] overflow-hidden shadow-lg border border-gray-100 h-[400px] lg:h-[500px]"
+            >
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Afd44d69c8e1a3f08a64a69027df5c27775cfd69a39e919863b7ac27402e30b6c&amp;source=constructor"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                allowfullscreen="true"
+                style="border: 0"
+                title="Карта расположения ПИШ УлГУ"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        id="footer"
+        class="bg-[#0B0E2F] text-white py-16 md:py-20 relative overflow-hidden"
+      >
+        <div class="absolute inset-0 pointer-events-none opacity-10">
+          <div
+            class="absolute top-10 left-10 w-48 h-48 rounded-[48px] bg-[#B1FF3A]"
+          ></div>
+          <div
+            class="absolute bottom-10 right-10 w-32 h-32 rounded-[36px] bg-[#1E2270]"
+          ></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+              <a href="#" class="flex items-center gap-3 mb-4 select-none">
+                <img
+                  src="./assets/favicon.png"
+                  alt="Передовая инженерная школа УлГУ"
+                  class="h-12 md:h-12 w-auto object-contain"
+                />
+                <span class="text-xl font-bold tracking-tight manrope"
+                  >ПИШ <span class="text-[#B1FF3A]">УлГУ</span></span
+                >
+              </a>
+              <p class="text-gray-400 text-sm leading-relaxed max-w-xs">
+                Передовая инженерная школа «ФармИнжиниринг» Ульяновского
+                государственного университета — подготовка инженеров будущего.
+              </p>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-bold mb-4 manrope">Контакты</h4>
+              <ul class="space-y-3 text-gray-300 text-sm">
+                <li class="flex items-center gap-3">
+                  <svg
+                    class="w-4 h-4 text-[#B1FF3A]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                  <a
+                    href="tel:+78422412090"
+                    class="hover:text-[#B1FF3A] transition-colors"
+                    >8 (8422) 41-20-90</a
+                  >
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg
+                    class="w-4 h-4 text-[#B1FF3A]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <a
+                    href="mailto:contact@ulsu.ru"
+                    class="hover:text-[#B1FF3A] transition-colors"
+                    >contact@ulsu.ru</a
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-4 h-4 text-[#B1FF3A] mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  <span>г. Ульяновск, ул. Льва Толстого, д. 42, ауд. 40</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-bold mb-4 manrope">Разделы</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li>
+                  <a href="#hero" class="hover:text-[#B1FF3A] transition-colors"
+                    >Главная</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#advantages"
+                    class="hover:text-[#B1FF3A] transition-colors"
+                    >Преимущества</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#directions"
+                    class="hover:text-[#B1FF3A] transition-colors"
+                    >Направления</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#exams"
+                    class="hover:text-[#B1FF3A] transition-colors"
+                    >Экзамены</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contacts"
+                    class="hover:text-[#B1FF3A] transition-colors"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Нижняя строка -->
+          <div
+            class="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500"
+          >
+            <p>© 2026 Передовая инженерная школа УлГУ. Все права защищены.</p>
+            <div class="flex gap-4 mt-4 sm:mt-0">
+              <a
+                href="https://www.ulsu.ru/ru/page/page_3736/"
+                class="hover:text-[#B1FF3A] transition-colors"
+                >Политика конфиденциальности</a
+              >
+              <a
+                href="https://abiturient.ulsu.ru/media/tile/Согласия_на_распространения_и_обработку_2025.docx"
+                class="hover:text-[#B1FF3A] transition-colors"
+                >Согласие на обработку данных</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./javascript/animation.js"></script>
+    <script src="./javascript/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./javascript/form.js"></script>
+  </body>
+</html>
