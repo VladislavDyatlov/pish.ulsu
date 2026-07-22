@@ -75,6 +75,11 @@
       const result = await response.json();
       if (result.ok) {
         showToast("success", "Заявка отправлена! Мы свяжемся с вами.");
+
+        if (typeof ym === "function") {
+          ym(110442409, "reachGoal", "SEND_FORM1");
+        }
+
         form.reset();
       } else {
         showToast("error", result.error || "Ошибка отправки");
